@@ -1,0 +1,147 @@
+/* Css for Desktop view. */
+*{
+    margin: 0%;
+    font-family: 'Titillium Web', sans-serif;
+}
+#Outer{
+    height: 100vh;
+    width:100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;   
+    box-sizing: border-box;
+}
+#Navbar{
+    height: 10%;
+    width: 100%;
+    background-color: #251B37;
+    color: #F7ECDE;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+#icon{
+    margin-left: 5%;
+    margin-right: 2%;
+}
+#Cover{
+    height: 60%;
+    width: 100%;
+   background-color: #FFECEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cover-img{
+    height: 80%;
+    width:100%;
+    border-radius: 3px;
+    margin-top: 0.5vh;
+}
+#cast{
+    margin-top: 1vh;
+    animation: scrolling 20s linear infinite;
+}
+#Ratings{
+    margin: 0%;
+    padding: 0%;
+    font-size: 32px;
+}
+#Card-div{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFECEF;
+}
+#Card-div:hover{
+    cursor: pointer;
+}
+#card{
+    height: 60%;
+    width: 15%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#card:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+#card-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+#modal-header{
+    height: 50%;
+    width:100%;
+    background-color:#251B37;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+}
+#modal-img{
+    height:200px;
+    width:50%; 
+}
+#modal-body{
+    font-size: 24px;
+    background-color:#251B37;
+    color: #FFECEF;
+    text-align: center;
+}
+
+/* CSS for mobile view */
+
+@media  (max-width: 480px) {
+    #Outer{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+    }
+    #Navbar{
+        height: 5%;
+        width: 100%;
+    }
+    #Cover{
+        height: 45%;
+        width: 100%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: none;
+    }
+    #cover-img{
+        height: 80%;
+        width: 100%;
+        border-radius: 0px;
+    }
+    #Card-div{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: whitesmoke;
+    }
+    #card{
+        margin: 15px 15px;
+        height: 30%;
+        width: 60%;
+        border: none;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+    #card-img{
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+    }
+  }
